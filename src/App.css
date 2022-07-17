@@ -1,0 +1,105 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.top {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  background-color: #7AC751;
+}
+
+.search-icons {
+  display: flex;
+  width: 100%;
+  height: 70px;
+  background: #ffffff;
+}
+
+.menu {
+  display: flex;
+  width: 100%;
+  height: 67px;
+  background: #F7F8FA;
+}
+
+.list-head {
+  display: flex;
+  width: 100%;
+}
+
+.list {
+  display: flex;
+}
+
+.head {
+  display: flex;
+}
+
+.benefits {
+  display: flex;
+  width: 100%;
+}
+
+.benefitsPict {
+  display: flex;
+  flex-direction: row; 
+}
+
+.benefitsPict .benefits-pict-item1 {
+
+}
+
+.benefitsPict .benefits-pict-item2 {
+  display: flex;
+
+}
+
+.benefitsPict .benefits-pict-item2 .pict1 {
+
+}
+
+.benefitsPict .benefits-pict-item2 .pict2 {
+
+}
+
+.trending {
+  display: flex;
+}
+
+.trending .trending-head {
+
+}
+
+.trending .trending-filter {
+  
+}
+
+.trending .trending-products {
+  display: flex;
+}
+
+.special-offer {
+  display: flex;
+}
+
+.our-products {
+  display: flex;
+}
+
+.comments {
+  display: flex;
+}
+
+.latest-article {
+  display: flex;
+}
+
+.button-info {
+  display: flex;
+}
+
+.footer {
+
+}
