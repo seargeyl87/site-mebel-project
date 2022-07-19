@@ -9,7 +9,10 @@ import SpecialOffer from './components/SpecialOffer';
 import OurProducts from './components/OurProducts';
 import Comments from './components/Comments';
 import LatestArticle from './components/LatestArticle';
-import ButtonInfo from './components/ButtonInfo'
+import ButtonInfo from './components/ButtonInfo';
+import Footer from './components/Footer';
+import BenefitsPict from './components/BenefitsPict';
+
 
 
 function App() {
@@ -20,12 +23,14 @@ function App() {
        <Menu/>
        <ListHead/>
        <Benefits/>
+       <BenefitsPict/>
        <Trending/>
        <SpecialOffer/>
        <OurProducts/>
        <Comments/>
        <LatestArticle/>
        <ButtonInfo/>
+       <Footer/>
     </div>
   );
 }
