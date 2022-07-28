@@ -4,20 +4,6 @@ import '../App.css';
 function ListHead() {
     return (
       <div className="list-head">
-          <div className="list-fern">
-          <div className="list-fern-item">All</div>
-          <div className="list-fern-item">New Arrivals</div>
-          <div className="list-fern-item">Hot Sale</div>
-          <div className="list-fern-item">Furniture</div>
-          <div className="list-fern-item">Amrature</div>
-          <div className="list-fern-item">Tabble</div>
-          <div className="list-fern-item">Chair</div>
-          <div className="list-fern-item">Sofa</div>
-          <div className="list-fern-item">Mirrors</div>
-          <div className="list-fern-item">Stools</div>
-          <div className="list-fern-item">Benches</div>
-          </div>
-
           <div className="head-img">
             <div className="head-img-item1">
                 <span>TOP COLLECTIONS 2022</span>

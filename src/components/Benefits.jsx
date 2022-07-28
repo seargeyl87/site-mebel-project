@@ -5,7 +5,7 @@ function Benefits() {
     return (
       <div className="benefits">
           <div className="benefits-item">
-              <img src="../../benefits-item1.png"/>
+              <img src="../../benefits-item1.svg"/>
               <div className="benefits-item-description">
                    <span>Free Shipping</span>
                    <p>Orders over $100</p>
@@ -13,21 +13,21 @@ function Benefits() {
           </div>
 
           <div className="benefits-item">
-              <img src="../../benefits-item2.png"/>
+              <img src="../../benefits-item2.svg"/>
               <div className="benefits-item-description">
                    <span>Smart Gift Card</span>
                    <p>Buy $1000 to get card</p>
               </div>
           </div>
           <div className="benefits-item">
-              <img src="../../benefits-item3.png"/>
+              <img src="../../benefits-item3.svg"/>
               <div className="benefits-item-description">
                   <span>Quick Payment</span>
                    <p>100% secure payment</p>
               </div>
           </div>
           <div className="benefits-item">
-              <img src="../../benefits-item4.png"/>
+              <img src="../../benefits-item4.svg"/>
               <div className="benefits-item-description">
                   <span>24/7 Support</span>
                    <p>Quick support</p>

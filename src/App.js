@@ -21,7 +21,6 @@ function App() {
        <Top/>
        <SearchIcons/>
        <Menu/>
-       <ListHead/>
        <Benefits/>
        <BenefitsPict/>
        <Trending/>
