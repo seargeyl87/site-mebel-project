@@ -8,15 +8,15 @@ function OurProducts() {
                        <h2>OUR PRODUCTS</h2>
                 </div>
                   <div className="our-products-filter">
-                      <div className="our-products-filter-item">Top Products</div>
-                      <div className="our-products-filter-item">Best Sellers</div>
-                      <div className="our-products-filter-item">New Arrivals</div>
-                      <div className="our-products-filter-item">Todays Deals</div>
+                      <a href="" className="our-products-filter-item select">All Products</a>
+                      <a href="" className="our-products-filter-item">Best Sellers</a>
+                      <a href="" className="our-products-filter-item">New Arrivals</a>
+                      <a href="" className="our-products-filter-item">Todays Deals</a>
               </div>
               <div className="our-products-products">
             <div className="our-products-products-item">
                  <div className="our-products-products-item-pict" style={{ backgroundImage:`url("../../our-products-products-item1.svg")`}}>
-                    <div className="pict-name">New</div>
+                    <div className="pict-name-sale">Sale</div>
                  </div>
                  <div className="products-item-name">Chair</div>
                  <div className="products-item-description">Minimal LCD chair</div>
@@ -58,7 +58,7 @@ function OurProducts() {
                               <div className="products-item-rating" style={{ backgroundImage:`url("../../star.svg")`}}> </div>
                               <div className="products-item-rating" style={{ backgroundImage:`url("../../star.svg")`}}> </div>
                               <div className="products-item-rating" style={{ backgroundImage:`url("../../star.svg")`}}> </div>
-                              <div className="products-item-rating" style={{ backgroundImage:`url("../../star.svg")`}}> </div>
+                              <div className="products-item-rating" style={{ backgroundImage:`url("../../star-gray.svg")`}}> </div>
                           </div>
                   </div>
             </div>
@@ -66,7 +66,7 @@ function OurProducts() {
 
             <div className="our-products-products-item">
                  <div className="our-products-products-item-pict" style={{ backgroundImage:`url("../../our-products-products-item3.svg")`}}>
-                    <div className="pict-name">New</div>
+                    <div className="pict-name-discount">-30%</div>
                  </div>
                  <div className="products-item-name">sofa</div>
                  <div className="products-item-description">Microfiber Sofa</div>
@@ -84,13 +84,13 @@ function OurProducts() {
                               <div className="products-item-rating" style={{ backgroundImage:`url("../../star.svg")`}}> </div>
                               <div className="products-item-rating" style={{ backgroundImage:`url("../../star.svg")`}}> </div>
                               <div className="products-item-rating" style={{ backgroundImage:`url("../../star.svg")`}}> </div>
-                              <div className="products-item-rating" style={{ backgroundImage:`url("../../star.svg")`}}> </div>
+                              <div className="products-item-rating" style={{ backgroundImage:`url("../../star-gray.svg")`}}> </div>
                           </div>
                   </div>
             </div>
             <div className="our-products-products-item">
                  <div className="our-products-products-item-pict" style={{ backgroundImage:`url("../../our-products-products-item4.svg")`}}>
-                    <div className="pict-name">New</div>
+                       <div className="pict-name-sale">Sale</div>
                  </div>
                  <div className="products-item-name">tabble</div>
                  <div className="products-item-description">Wood Coffee Tables</div>
@@ -114,7 +114,7 @@ function OurProducts() {
             </div>
             <div className="our-products-products-item">
                  <div className="our-products-products-item-pict" style={{ backgroundImage:`url("../../our-products-products-item5.svg")`}}>
-                    <div className="pict-name">New</div>
+                     <div className="pict-name-discount">-30%</div>
                  </div>
                  <div className="products-item-name">Chair</div>
                  <div className="products-item-description">Acacia Wood Club Chairs</div>
@@ -127,13 +127,6 @@ function OurProducts() {
                                 &#36;120
                           </div>
                       </div>
-                          <div className="rating">
-                              <div className="products-item-rating" style={{ backgroundImage:`url("../../star.svg")`}}> </div>
-                              <div className="products-item-rating" style={{ backgroundImage:`url("../../star.svg")`}}> </div>
-                              <div className="products-item-rating" style={{ backgroundImage:`url("../../star.svg")`}}> </div>
-                              <div className="products-item-rating" style={{ backgroundImage:`url("../../star.svg")`}}> </div>
-                              <div className="products-item-rating" style={{ backgroundImage:`url("../../star.svg")`}}> </div>
-                          </div>
                   </div>
             </div>
             <div className="our-products-products-item">
@@ -156,13 +149,13 @@ function OurProducts() {
                               <div className="products-item-rating" style={{ backgroundImage:`url("../../star.svg")`}}> </div>
                               <div className="products-item-rating" style={{ backgroundImage:`url("../../star.svg")`}}> </div>
                               <div className="products-item-rating" style={{ backgroundImage:`url("../../star.svg")`}}> </div>
-                              <div className="products-item-rating" style={{ backgroundImage:`url("../../star.svg")`}}> </div>
+                              <div className="products-item-rating" style={{ backgroundImage:`url("../../star-gray.svg")`}}> </div>
                           </div>
                   </div>
             </div>
             <div className="our-products-products-item">
                  <div className="our-products-products-item-pict" style={{ backgroundImage:`url("../../our-products-products-item7.svg")`}}>
-                    <div className="pict-name">New</div>
+                     <div className="pict-name-sale">Sale</div>
                  </div>
                  <div className="products-item-name">Storage</div>
                  <div className="products-item-description">Juno-Hinged Lid Storage</div>
@@ -204,7 +197,7 @@ function OurProducts() {
                               <div className="products-item-rating" style={{ backgroundImage:`url("../../star.svg")`}}> </div>
                               <div className="products-item-rating" style={{ backgroundImage:`url("../../star.svg")`}}> </div>
                               <div className="products-item-rating" style={{ backgroundImage:`url("../../star.svg")`}}> </div>
-                              <div className="products-item-rating" style={{ backgroundImage:`url("../../star.svg")`}}> </div>
+                              <div className="products-item-rating" style={{ backgroundImage:`url("../../star-gray.svg")`}}> </div>
                           </div>
                   </div>
             </div>

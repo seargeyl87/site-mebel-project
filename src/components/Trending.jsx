@@ -6,14 +6,30 @@ function Trending() {
       <div className="trending">
           <div className="trending-head"><h2>TRENDING</h2></div>
           <div className="trending-filter">
-             <div className="trending-filter-item">Top Products</div>
-             <div className="trending-filter-item">New Arrivals</div>
-             <div className="trending-filter-item">Best Sellers</div>
+             <a href="" className="trending-filter-item trending-filter-selected">Top Products</a>
+             <a href="" className="trending-filter-item">New Arrivals</a>
+             <a href="" className="trending-filter-item">Best Sellers</a>
           </div>
           <div className="trending-products">
             <div className="trending-products-item">
                  <div className="trending-products-item-pict" style={{ backgroundImage:`url("../../trending-products-item1.svg")`}}>
                     <div className="pict-name">New</div>
+                        <div className="hover">
+                            <div className="hover-feature">
+                                    <div className="hover-feature-casing">
+                                        <div className="hover-feature-item" style={{ backgroundImage:`url("../../label-heart.svg")`}}></div>
+                                    </div>
+                                    <div className="hover-feature-casing">
+                                        <div className="hover-feature-item" style={{ backgroundImage:`url("../../label-shop.svg")`}}></div>
+                                    </div>
+                                    <div className="hover-feature-casing">
+                                        <div className="hover-feature-item" style={{ backgroundImage:`url("../../label-refresh.svg")`}}></div>
+                                    </div>
+                                    <div className="hover-feature-casing">
+                                        <div className="hover-feature-item" style={{ backgroundImage:`url("../../label-view.svg")`}}></div>
+                                    </div>
+                                </div>
+                        </div>
                  </div>
                  <div className="products-item-name">Chair</div>
                  <div className="products-item-description">Minimal LCD chair</div>
@@ -38,6 +54,22 @@ function Trending() {
             <div className="trending-products-item">
                  <div className="trending-products-item-pict" style={{ backgroundImage:`url("../../trending-products-item2.svg")`}}>
                     <div className="pict-name">New</div>
+                    <div className="hover">
+                            <div className="hover-feature">
+                                    <div className="hover-feature-casing">
+                                        <div className="hover-feature-item" style={{ backgroundImage:`url("../../label-heart.svg")`}}></div>
+                                    </div>
+                                    <div className="hover-feature-casing">
+                                        <div className="hover-feature-item" style={{ backgroundImage:`url("../../label-shop.svg")`}}></div>
+                                    </div>
+                                    <div className="hover-feature-casing">
+                                        <div className="hover-feature-item" style={{ backgroundImage:`url("../../label-refresh.svg")`}}></div>
+                                    </div>
+                                    <div className="hover-feature-casing">
+                                        <div className="hover-feature-item" style={{ backgroundImage:`url("../../label-view.svg")`}}></div>
+                                    </div>
+                                </div>
+                        </div>
                  </div>
                  <div className="products-item-name">Chair</div>
                  <div className="products-item-description">Minimal iconic chair</div>
@@ -55,7 +87,7 @@ function Trending() {
                               <div className="products-item-rating" style={{ backgroundImage:`url("../../star.svg")`}}> </div>
                               <div className="products-item-rating" style={{ backgroundImage:`url("../../star.svg")`}}> </div>
                               <div className="products-item-rating" style={{ backgroundImage:`url("../../star.svg")`}}> </div>
-                              <div className="products-item-rating" style={{ backgroundImage:`url("../../star.svg")`}}> </div>
+                              <div className="products-item-rating" style={{ backgroundImage:`url("../../star-gray.svg")`}}> </div>
                           </div>
                   </div>
             </div>
@@ -63,7 +95,23 @@ function Trending() {
 
             <div className="trending-products-item">
                  <div className="trending-products-item-pict" style={{ backgroundImage:`url("../../trending-products-item3.svg")`}}>
-                    <div className="pict-name">New</div>
+                      <div className="pict-name-sale">Sale</div>
+                      <div className="hover">
+                            <div className="hover-feature">
+                                    <div className="hover-feature-casing">
+                                        <div className="hover-feature-item" style={{ backgroundImage:`url("../../label-heart.svg")`}}></div>
+                                    </div>
+                                    <div className="hover-feature-casing">
+                                        <div className="hover-feature-item" style={{ backgroundImage:`url("../../label-shop.svg")`}}></div>
+                                    </div>
+                                    <div className="hover-feature-casing">
+                                        <div className="hover-feature-item" style={{ backgroundImage:`url("../../label-refresh.svg")`}}></div>
+                                    </div>
+                                    <div className="hover-feature-casing">
+                                        <div className="hover-feature-item" style={{ backgroundImage:`url("../../label-view.svg")`}}></div>
+                                    </div>
+                                </div>
+                        </div>
                  </div>
                  <div className="products-item-name">Chair</div>
                  <div className="products-item-description">Dining chairs</div>
@@ -87,7 +135,23 @@ function Trending() {
             </div>
             <div className="trending-products-item">
                  <div className="trending-products-item-pict" style={{ backgroundImage:`url("../../trending-products-item4.svg")`}}>
-                    <div className="pict-name">New</div>
+                    <div className="pict-name-sale">Sale</div>
+                    <div className="hover">
+                            <div className="hover-feature">
+                                    <div className="hover-feature-casing">
+                                        <div className="hover-feature-item" style={{ backgroundImage:`url("../../label-heart.svg")`}}></div>
+                                    </div>
+                                    <div className="hover-feature-casing">
+                                        <div className="hover-feature-item" style={{ backgroundImage:`url("../../label-shop.svg")`}}></div>
+                                    </div>
+                                    <div className="hover-feature-casing">
+                                        <div className="hover-feature-item" style={{ backgroundImage:`url("../../label-refresh.svg")`}}></div>
+                                    </div>
+                                    <div className="hover-feature-casing">
+                                        <div className="hover-feature-item" style={{ backgroundImage:`url("../../label-view.svg")`}}></div>
+                                    </div>
+                                </div>
+                        </div>
                  </div>
                  <div className="products-item-name">Chair</div>
                  <div className="products-item-description">Buskbo armchair</div>
@@ -105,13 +169,29 @@ function Trending() {
                               <div className="products-item-rating" style={{ backgroundImage:`url("../../star.svg")`}}> </div>
                               <div className="products-item-rating" style={{ backgroundImage:`url("../../star.svg")`}}> </div>
                               <div className="products-item-rating" style={{ backgroundImage:`url("../../star.svg")`}}> </div>
-                              <div className="products-item-rating" style={{ backgroundImage:`url("../../star.svg")`}}> </div>
+                              <div className="products-item-rating" style={{ backgroundImage:`url("../../star-gray.svg")`}}> </div>
                           </div>
                   </div>
             </div>
             <div className="trending-products-item">
                  <div className="trending-products-item-pict" style={{ backgroundImage:`url("../../trending-products-item5.svg")`}}>
-                    <div className="pict-name">New</div>
+                      <div className="pict-name-sale">Sale</div> 
+                      <div className="hover">
+                            <div className="hover-feature">
+                                    <div className="hover-feature-casing">
+                                        <div className="hover-feature-item" style={{ backgroundImage:`url("../../label-heart.svg")`}}></div>
+                                    </div>
+                                    <div className="hover-feature-casing">
+                                        <div className="hover-feature-item" style={{ backgroundImage:`url("../../label-shop.svg")`}}></div>
+                                    </div>
+                                    <div className="hover-feature-casing">
+                                        <div className="hover-feature-item" style={{ backgroundImage:`url("../../label-refresh.svg")`}}></div>
+                                    </div>
+                                    <div className="hover-feature-casing">
+                                        <div className="hover-feature-item" style={{ backgroundImage:`url("../../label-view.svg")`}}></div>
+                                    </div>
+                                </div>
+                        </div>               
                  </div>
                  <div className="products-item-name">Chair</div>
                  <div className="products-item-description">Modern chairs</div>
@@ -124,18 +204,27 @@ function Trending() {
                                 &#36;120
                           </div>
                       </div>
-                          <div className="rating">
-                              <div className="products-item-rating" style={{ backgroundImage:`url("../../star.svg")`}}> </div>
-                              <div className="products-item-rating" style={{ backgroundImage:`url("../../star.svg")`}}> </div>
-                              <div className="products-item-rating" style={{ backgroundImage:`url("../../star.svg")`}}> </div>
-                              <div className="products-item-rating" style={{ backgroundImage:`url("../../star.svg")`}}> </div>
-                              <div className="products-item-rating" style={{ backgroundImage:`url("../../star.svg")`}}> </div>
-                          </div>
                   </div>
             </div>
             <div className="trending-products-item">
                  <div className="trending-products-item-pict" style={{ backgroundImage:`url("../../trending-products-item6.svg")`}}>
-                    <div className="pict-name">New</div>
+                        <div className="pict-name-sale">Sale</div>
+                        <div className="hover">
+                            <div className="hover-feature">
+                                    <div className="hover-feature-casing">
+                                        <div className="hover-feature-item" style={{ backgroundImage:`url("../../label-heart.svg")`}}></div>
+                                    </div>
+                                    <div className="hover-feature-casing">
+                                        <div className="hover-feature-item" style={{ backgroundImage:`url("../../label-shop.svg")`}}></div>
+                                    </div>
+                                    <div className="hover-feature-casing">
+                                        <div className="hover-feature-item" style={{ backgroundImage:`url("../../label-refresh.svg")`}}></div>
+                                    </div>
+                                    <div className="hover-feature-casing">
+                                        <div className="hover-feature-item" style={{ backgroundImage:`url("../../label-view.svg")`}}></div>
+                                    </div>
+                                </div>
+                        </div>
                  </div>
                  <div className="products-item-name">Chair</div>
                  <div className="products-item-description">Plastic dining chair</div>
@@ -153,13 +242,29 @@ function Trending() {
                               <div className="products-item-rating" style={{ backgroundImage:`url("../../star.svg")`}}> </div>
                               <div className="products-item-rating" style={{ backgroundImage:`url("../../star.svg")`}}> </div>
                               <div className="products-item-rating" style={{ backgroundImage:`url("../../star.svg")`}}> </div>
-                              <div className="products-item-rating" style={{ backgroundImage:`url("../../star.svg")`}}> </div>
+                              <div className="products-item-rating" style={{ backgroundImage:`url("../../star-gray.svg")`}}> </div>
                           </div>
                   </div>
             </div>
             <div className="trending-products-item">
                  <div className="trending-products-item-pict" style={{ backgroundImage:`url("../../trending-products-item7.svg")`}}>
                     <div className="pict-name">New</div>
+                    <div className="hover">
+                            <div className="hover-feature">
+                                    <div className="hover-feature-casing">
+                                        <div className="hover-feature-item" style={{ backgroundImage:`url("../../label-heart.svg")`}}></div>
+                                    </div>
+                                    <div className="hover-feature-casing">
+                                        <div className="hover-feature-item" style={{ backgroundImage:`url("../../label-shop.svg")`}}></div>
+                                    </div>
+                                    <div className="hover-feature-casing">
+                                        <div className="hover-feature-item" style={{ backgroundImage:`url("../../label-refresh.svg")`}}></div>
+                                    </div>
+                                    <div className="hover-feature-casing">
+                                        <div className="hover-feature-item" style={{ backgroundImage:`url("../../label-view.svg")`}}></div>
+                                    </div>
+                                </div>
+                        </div>
                  </div>
                  <div className="products-item-name">Chair</div>
                  <div className="products-item-description">Minimal Wood chair</div>
@@ -184,6 +289,22 @@ function Trending() {
             <div className="trending-products-item">
                  <div className="trending-products-item-pict" style={{ backgroundImage:`url("../../trending-products-item8.svg")`}}>
                     <div className="pict-name">New</div>
+                    <div className="hover">
+                            <div className="hover-feature">
+                                    <div className="hover-feature-casing">
+                                        <div className="hover-feature-item" style={{ backgroundImage:`url("../../label-heart.svg")`}}></div>
+                                    </div>
+                                    <div className="hover-feature-casing">
+                                        <div className="hover-feature-item" style={{ backgroundImage:`url("../../label-shop.svg")`}}></div>
+                                    </div>
+                                    <div className="hover-feature-casing">
+                                        <div className="hover-feature-item" style={{ backgroundImage:`url("../../label-refresh.svg")`}}></div>
+                                    </div>
+                                    <div className="hover-feature-casing">
+                                        <div className="hover-feature-item" style={{ backgroundImage:`url("../../label-view.svg")`}}></div>
+                                    </div>
+                                </div>
+                        </div>
                  </div>
                  <div className="products-item-name">Chair</div>
                  <div className="products-item-description">Elegent wood chair</div>
@@ -201,12 +322,15 @@ function Trending() {
                               <div className="products-item-rating" style={{ backgroundImage:`url("../../star.svg")`}}> </div>
                               <div className="products-item-rating" style={{ backgroundImage:`url("../../star.svg")`}}> </div>
                               <div className="products-item-rating" style={{ backgroundImage:`url("../../star.svg")`}}> </div>
-                              <div className="products-item-rating" style={{ backgroundImage:`url("../../star.svg")`}}> </div>
+                              <div className="products-item-rating" style={{ backgroundImage:`url("../../star-gray.svg")`}}> </div>
                           </div>
                   </div>
             </div>
-
-          </div>   
+          </div>  
+          <div className="switch">
+              <div className="switch-off" style={{ backgroundImage:`url("../../switch-off.svg")`}}></div>
+              <div className="switch-on" style={{ backgroundImage:`url("../../switch-on.svg")`}}></div>
+          </div> 
       </div>
     );
   }

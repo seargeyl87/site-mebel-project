@@ -32,10 +32,30 @@ function SpecialOffer() {
                                                 </div>
                                     </div>
                                     <div className="timer">
-                                          <div className="round">10</div>
-                                          <div className="round">15</div>
-                                          <div className="round">20</div>
-                                          <div className="round">30</div>
+                                          <div>
+                                              <div className="round">
+                                                  <div className="count">10</div>
+                                                  <div className="unit">days</div>
+                                             </div>
+                                          </div>
+                                          <div>
+                                              <div className="round">
+                                                  <div className="count">15</div>
+                                                  <div className="unit">hrs</div>
+                                              </div>
+                                          </div>
+                                          <div>
+                                              <div className="round">
+                                                  <div className="count">30</div>
+                                                  <div className="unit">min</div>
+                                              </div>
+                                          </div>
+                                          <div>
+                                              <div className="round">
+                                                  <div className="count">22</div>
+                                                  <div className="unit">secs</div>
+                                              </div>
+                                          </div>
                                     </div>
                             </div>            
                           </div>
@@ -66,10 +86,30 @@ function SpecialOffer() {
                                                 </div>
                                     </div>
                                     <div className="timer">
-                                          <div className="round">15</div>
-                                          <div className="round">08</div>
-                                          <div className="round">20</div>
-                                          <div className="round">12</div>
+                                        <div>
+                                              <div className="round">
+                                                  <div className="count">10</div>
+                                                  <div className="unit">days</div>
+                                             </div>
+                                         </div>
+                                         <div>
+                                              <div className="round">
+                                                  <div className="count">15</div>
+                                                  <div className="unit">hrs</div>
+                                              </div>
+                                         </div>
+                                         <div>
+                                              <div className="round">
+                                                  <div className="count">30</div>
+                                                  <div className="unit">min</div>
+                                              </div>
+                                          </div>
+                                          <div>
+                                              <div className="round">
+                                                  <div className="count">22</div>
+                                                  <div className="unit">secs</div>
+                                              </div>
+                                          </div>
                                     </div>
                             </div>            
                        </div>

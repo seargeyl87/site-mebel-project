@@ -10,8 +10,9 @@ function BenefitsPict() {
                <div className="txt">
                   <h4>Modern Furniture Collections</h4>
                   <span>Starting from $500</span>
-                  <div className="read-more">
-                    <p>Read more</p>
+                  <div className="read-more-arrow">
+                       <div className="read-more">Read more</div>
+                       <div className="arrow" style={{ backgroundImage:`url("../../arrow.svg")` , backgroundSize: 'fill'}}></div>
                   </div>
                </div>
              </div>
@@ -21,19 +22,21 @@ function BenefitsPict() {
                     <div className="txt">
                       <h4>Geometric Bookcase</h4>
                       <span>Up to 20% discount</span>
-                      <div className="read-more">
-                        <p>Read more</p>
-                    </div>
+                      <div className="read-more-arrow">
+                       <div className="read-more">Read more</div>
+                       <div className="arrow" style={{ backgroundImage:`url("../../arrow.svg")` , backgroundSize: 'fill'}}></div>
+                  </div>
                     </div>
               </div>
                  
-              <div className="pict3"  style={{ backgroundImage:`url("../../benefits-pict3.png")`, backgroundSize: 'fill' }}>   
+              <div className="pict2"  style={{ backgroundImage:`url("../../benefits-pict3.png")`, backgroundSize: 'fill' }}>   
                     <div className="txt">
                         <h4>Minimal Sofa collections</h4>
                         <span>Sale upto 40% discount</span>
-                        <div className="read-more">
-                          <p>Read more</p>
-                      </div>
+                        <div className="read-more-arrow">
+                             <div className="read-more">Read more</div>
+                            <div className="arrow" style={{ backgroundImage:`url("../../arrow.svg")` , backgroundSize: 'fill'}}></div>
+                       </div>
                     </div>
               </div>
           </div>

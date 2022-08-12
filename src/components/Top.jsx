@@ -8,7 +8,7 @@ function Top() {
            <div className="lang-log">
               <div className="language">English (USD)</div>
               <div className="lang-icon"><img src="../../language-icon.svg"/></div>
-              <div className="part"><img src="../../partition.svg"/></div>
+              <div className="part"></div>
               <div className="login">Login or Sign up</div>
            </div>
       </div>

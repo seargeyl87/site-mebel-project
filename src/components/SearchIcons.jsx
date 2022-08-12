@@ -7,7 +7,6 @@ function SearchIcons() {
           <div className="head-ferniking">
             <img src="../../icon1.svg"/>
             <p>Furniking</p>
-            
           </div>
           <div className="search">
             <input name="Search" placeholder="Search here"/>

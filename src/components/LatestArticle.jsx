@@ -11,7 +11,10 @@ function LatestArticle() {
                      <div className="latest-article-pict-article">
                           <div className="latest-article-pict-article-into" style={{ backgroundImage:`url("../../card-1.svg")`}}>
                                <div className="name-date">
-                                  <div className="name">Furniture</div>
+                                  <div className="name-block">
+                                       <div className="name-label" style={{ backgroundImage:`url("../../name-label.svg")`}}></div>
+                                       <div className="name-text"> Furniture</div>
+                                       </div>
                                   <div className="date">23 September 2022</div>
                                </div>
                                <div className="description">Begineer guide buying minimal sofa</div>
@@ -21,7 +24,11 @@ function LatestArticle() {
                      <div className="latest-article-pict-article">
                           <div className="latest-article-pict-article-into" style={{ backgroundImage:`url("../../card-2.svg")`}}>
                                <div className="name-date">
-                                  <div className="name">Table</div>
+                                  
+                                   <div className="name-block">
+                                       <div className="name-label" style={{ backgroundImage:`url("../../name-label.svg")`}}></div>
+                                       <div className="name-text">Table</div>
+                                   </div>
                                   <div className="date">25 September 2022</div>
                                </div>
                                <div className="description">Buying best minimal computer table</div>
@@ -31,7 +38,10 @@ function LatestArticle() {
                      <div className="latest-article-pict-article">
                           <div className="latest-article-pict-article-into" style={{ backgroundImage:`url("../../card-3.svg")`}}>
                                <div className="name-date">
-                                  <div className="name">Bench</div>
+                                     <div className="name-block">
+                                       <div className="name-label" style={{ backgroundImage:`url("../../name-label.svg")`}}></div>
+                                       <div className="name-text">Bench</div>
+                                     </div>
                                   <div className="date">23 March 2022</div>
                                </div>
                                <div className="description">How to choose best modern bench</div>
@@ -40,8 +50,11 @@ function LatestArticle() {
                      </div>
                      <div className="latest-article-pict-article">
                           <div className="latest-article-pict-article-into" style={{ backgroundImage:`url("../../card-4.svg")`}}>
-                               <div className="name-date">
-                                  <div className="name">Furniture</div>
+                               <div className="name-date">    
+                                    <div className="name-block">
+                                       <div className="name-label" style={{ backgroundImage:`url("../../name-label.svg")`}}></div>
+                                       <div className="name-text">Chair</div>
+                                    </div>
                                   <div className="date">23 March 2022</div>
                                </div>
                                <div className="description">Best Summer Outfit Style in this Country</div>

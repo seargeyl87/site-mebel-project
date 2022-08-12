@@ -40,11 +40,17 @@ function Menu() {
             <div className="head-img-item1">
                 <span>TOP COLLECTIONS 2022</span>
                 <h1>We Serve Your Dream Furniture</h1>
-                <p>Get 50% off all products</p>
+                <div className="discount">Get 50% off all products</div>
                 <button>SHOP NOW</button>
             </div>
             <div className="head-img-item2">
                <img src="../../chair-head.png"/>
+               <div className="points">
+                  <div className="point" style={{ backgroundImage:`url("../../point.svg")`}}></div>
+                  <div className="point" style={{ backgroundImage:`url("../../point.svg")`}}></div>
+                  <div className="point-choose" style={{ backgroundImage:`url("../../point-choose.svg")`}}></div>
+                  <div className="point" style={{ backgroundImage:`url("../../point.svg")`}}></div>
+               </div>
             </div>
            
             <div className="head-img-item3">
@@ -64,14 +70,10 @@ function Menu() {
                    <p>Office Desk Chair</p>
                 </div>
             </div>
-
-
-
           </div>
-     
       </div>
-        </div>
-      </div>
+    </div>
+  </div>
     );
   }
   
