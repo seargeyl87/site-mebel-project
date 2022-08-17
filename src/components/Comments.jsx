@@ -2,8 +2,36 @@ import '../App.css';
 import {useState} from 'react';
 
 
+const service = {
+  state: 'active',
+  getUser: function () {
+    return this.users.filter(function (user) {
+      return user.position === this.state;
+    });
+  },
+  users: [
+    { name: 'Andrew', position: 'active' },
+    { name: 'John', position: 'inactive' },
+  ],
+};
+
+
+console.log(service.getUser())
+
+
+
 function Comments() {
-let [state, setState] = useState(0)
+let [state, setState] = useState(0);
+
+
+async function submit() {
+let response = await fetch('https://apimocha.com/seargeyl87/mebel')
+      .then(response => response.json())
+      .then(result => console.log(result))
+      .catch(error => console.log(error))
+    }
+
+    submit()
 
 let prevSlider = () => {
   if(state >= 0) {
