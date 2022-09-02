@@ -5,16 +5,6 @@ import {useState} from 'react';
 function Comments() {
 let [state, setState] = useState(0);
 
-
-async function submit() {
-let response = await fetch('https://apimocha.com/seargeyl87/mebel')
-      .then(response => response.json())
-      .then(result => console.log(result))
-      .catch(error => console.log(error))
-    }
-
-    submit()
-
 let prevSlider = () => {
   if(state >= 0) {
     setState(-1632);
@@ -41,19 +31,19 @@ let prevSlider = () => {
                     <div className="container-slide">
                         <div className="slider-comments-block" style={{ left: state + 'px'}}>
                               <div className="comments-block-item" id="slide1">
-                                <div className="comments-pict" style={{ backgroundImage:`url("../../angelina.svg")`}}></div>
+                                <div className="comments-pict" style={{ backgroundImage:`url("../../img/angelina.svg")`}}></div>
                                 <div className="comment">I like Furniking.com and as compared to other company it's polices and customers support is very good easy to reach., also many time they unable to delivered. The ultricies are pregnant while the quis is suspended. Risus commodo viverra maecenas accumsan lacus vel facilisist amet.</div>
                                 <div className="comment-name">Angelina Joly</div>
                                 <div className="comment-prof">Co-founder</div>
                               </div>
                               <div className="comments-block-item" id="slide2">
-                                <div className="comments-pict" style={{ backgroundImage:`url("../../angelina.svg")`}}></div>
+                                <div className="comments-pict" style={{ backgroundImage:`url("../../img/angelina.svg")`}}></div>
                                 <div className="comment"> Мне нравится Furniking.com, и по сравнению с другими компаниями, его политика и поддержка клиентов очень хорошо доступны, и часто они не могут доставить. Ультрисы беременны, а квис приостановлен. Risus commodo viverra maecenas accumsan lacus vel facilisist amet.</div>
                                 <div className="comment-name">Angelina Joly2</div>
                                 <div className="comment-prof">Co-founder2</div>
                               </div>
                               <div className="comments-block-item" id="slide3">
-                                <div className="comments-pict" style={{ backgroundImage:`url("../../angelina.svg")`}}></div>
+                                <div className="comments-pict" style={{ backgroundImage:`url("../../img/angelina.svg")`}}></div>
                                 <div className="comment">Мені подобається Furniking.com, і, порівняно з іншими компаніями, її політика та служба підтримки клієнтів дуже хороша, легко доступна. Крім того, часто вони не можуть доставити. Ultricies вагітні, а quis призупинено. Risus commodo viverra maecenas accumsan lacus vel facilisist amet.</div>
                                 <div className="comment-name">Angelina Joly3</div>
                                 <div className="comment-prof">Co-founder3</div>

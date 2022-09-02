@@ -4,6 +4,12 @@
   max-width: 1440px;
 }
 
+.container  .container_chair {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 
 .body {
  display: flex;
@@ -616,8 +622,7 @@ padding-right: 13.5%;
 }
 
 
-
-.trending .trending-products .trending-products-item-pict .pict-name {
+ .pict-name-new {
   color: #FFFFFF;
   font-size: 12px;
   font-family: 'Mulish', sans-serif;
@@ -630,13 +635,28 @@ padding-right: 13.5%;
   border-radius: 0px 0px 5px 0px;
 }
 
-.trending .trending-products .trending-products-item-pict .pict-name-sale {
+.pict-name-sale {
   color: #FFFFFF;
   font-size: 12px;
   font-family: 'Mulish', sans-serif;
   width: 45px;
   height: 21px;
   background: #7AC751;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px 0px 5px 0px;
+}
+
+.pict-name-discount {
+  color: #FFFFFF;
+  font-size: 12px;
+  font-family: 'Mulish', sans-serif;
+  width: 45px;
+  height: 21px;
+  background: #FF6868;
+
+  ;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -674,17 +694,24 @@ padding-right: 13.5%;
 
 
 
-.trending .trending-products .trending-products-item .products-item-pricing-rating .rating {
+.rating {
    display: flex;
    align-items: center;
 
 }
 
-.trending .trending-products .trending-products-item .products-item-pricing-rating .rating .products-item-rating {
+.rating .products-item-rating {
   height: 11px;
   width: 11px;
   margin-left: 3px;
+  background-image: url("../public/star-gray.svg");
+}
 
+ .rating .products-item-rating-green {
+  height: 11px;
+  width: 11px;
+  margin-left: 3px;
+  background-image: url("../public/star.svg");
 }
 
 .trending .trending-products .trending-products-item .products-item-pricing-rating .products-item-pricing .products-item-pricing-new {
@@ -964,7 +991,7 @@ padding-right: 13.5%;
 }
 
 
-.our-products .our-products-products .our-products-products-item-pict .pict-name {
+/* .our-products .our-products-products .our-products-products-item-pict .pict-name {
   color: #FFFFFF;
   font-size: 12px;
   font-family: 'Mulish', sans-serif;
@@ -975,9 +1002,9 @@ padding-right: 13.5%;
   justify-content: center;
   align-items: center;
   border-radius: 0px 0px 5px 0px;
-}
+} */
 
-.our-products .our-products-products .our-products-products-item-pict .pict-name-sale {
+/* .our-products .our-products-products .our-products-products-item-pict .pict-name-sale {
   color: #FFFFFF;
   font-size: 12px;
   font-family: 'Mulish', sans-serif;
@@ -1001,7 +1028,7 @@ padding-right: 13.5%;
   justify-content: center;
   align-items: center;
   border-radius: 0px 0px 5px 0px;
-}
+} */
 
 
 .our-products .our-products-products .our-products-products-item .products-item-pricing {

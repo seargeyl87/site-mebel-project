@@ -1,0 +1,137 @@
+[
+    {
+    "id":1, "status":"Sale", "style": "pict-name-sale", "name":"Chair", "new_price": 180, "old_price": 250, "description": "Minimal LCD chair", "url": "../../our-products-products-item1.png", "rating": 5
+    },
+  
+    {
+    "id":2, "status":"New", "style": "pict-name-new",  "name":"Sofa", "new_price": 120, "old_price": 150, "description": "Modern Sofa", "url": "../../our-products-products-item2.png", "rating": 4
+    },
+  
+    {
+    "id":3, "status":30, "style": "pict-name-discount", "name":"Sofa", "new_price": 130, "old_price": 150, "description": "Microfiber Sofa", "url": "../../our-products-products-item3.png", "rating": 4
+    },
+  
+    {
+    "id":4, "status":"Sale", "style": "pict-name-sale", "name":"Tabble", "new_price": 100, "old_price": 120, "description": "Wood Coffee Tables", "url": "../../our-products-products-item4.png", "rating": 5
+    },
+  
+    {
+    "id":5, "status":30, "style": "pict-name-discount", "name":"Chair", "new_price": 100, "old_price": 120, "description": "Acacia Wood Club Chairs", "url": "../../our-products-products-item5.png", "rating": 5
+    },
+    {
+    "id":6, "status":"Sale", "style": "pict-name-sale", "name":"Bench", "new_price": 130, "old_price": 150, "description": "Amalia Cowhide Bench", "url": "../../our-products-products-item6.png", "rating": 4
+    },
+  
+    {
+    "id":7, "status":"New", "style": "pict-name-new", "name":"Storage", "new_price": 180, "old_price": 250, "description": "Juno-Hinged Lid Storage", "url": "../../our-products-products-item7.png", "rating": 5
+    },
+  
+    {
+    "id":8, "status":"New", "style": "pict-name-new", "name":"Furniture", "new_price": 120, "old_price": 150, "description": "Delicia 3 Piece Living Room", "url": "../../our-products-products-item8.png", "rating": 4
+    },
+   {
+    "id":9, "status":"Sale", "style": "pict-name-sale", "name":"Chair", "new_price": 180, "old_price": 250, "description": "Minimal LCD chair", "url": "../../our-products-products-item1.png", "rating": 5
+    },
+  
+    {
+    "id":10, "status":"New", "style": "pict-name-new",  "name":"Sofa", "new_price": 120, "old_price": 150, "description": "Modern Sofa", "url": "../../our-products-products-item2.png", "rating": 4
+    },
+  
+    {
+    "id":11, "status":30, "style": "pict-name-discount", "name":"Sofa", "new_price": 130, "old_price": 150, "description": "Microfiber Sofa", "url": "../../our-products-products-item3.png", "rating": 4
+    },
+  
+    {
+    "id":12, "status":"Sale", "style": "pict-name-sale", "name":"Tabble", "new_price": 100, "old_price": 120, "description": "Wood Coffee Tables", "url": "../../our-products-products-item4.png", "rating": 5
+    },
+  
+    {
+    "id":13, "status":30, "style": "pict-name-discount", "name":"Chair", "new_price": 100, "old_price": 120, "description": "Acacia Wood Club Chairs", "url": "../../our-products-products-item5.png", "rating": 5
+    },
+    {
+    "id":14, "status":"Sale", "style": "pict-name-sale", "name":"Bench", "new_price": 130, "old_price": 150, "description": "Amalia Cowhide Bench", "url": "../../our-products-products-item6.png", "rating": 4
+    },
+  
+    {
+    "id":15, "status":"New", "style": "pict-name-new", "name":"Storage", "new_price": 180, "old_price": 250, "description": "Juno-Hinged Lid Storage", "url": "../../our-products-products-item7.png", "rating": 5
+    },
+  
+    {
+    "id":16, "status":"New", "style": "pict-name-new", "name":"Furniture", "new_price": 120, "old_price": 150, "description": "Delicia 3 Piece Living Room", "url": "../../our-products-products-item8.png", "rating": 4
+    },
+   {
+    "id":17, "status":"Sale", "style": "pict-name-sale", "name":"Chair", "new_price": 180, "old_price": 250, "description": "Minimal LCD chair", "url": "../../our-products-products-item1.png", "rating": 5
+    },
+  
+    {
+     "id":18,  "status":"New", "style": "pict-name-new",  "name":"Sofa", "new_price": 120, "old_price": 150, "description": "Modern Sofa", "url": "../../our-products-products-item2.png", "rating": 4
+    },
+  
+    {
+      "id":19, "status":30, "style": "pict-name-discount", "name":"Sofa", "new_price": 130, "old_price": 150, "description": "Microfiber Sofa", "url": "../../our-products-products-item3.png", "rating": 4
+    },
+  
+    {
+      "id":20, "status":"Sale", "style": "pict-name-sale", "name":"Tabble", "new_price": 100, "old_price": 120, "description": "Wood Coffee Tables", "url": "../../our-products-products-item4.png", "rating": 5
+    },
+  
+    {
+      "id":21,  "status":30, "style": "pict-name-discount", "name":"Chair", "new_price": 100, "old_price": 120, "description": "Acacia Wood Club Chairs", "url": "../../our-products-products-item5.png", "rating": 5
+    },
+    {
+      "id":22,  "status":"Sale", "style": "pict-name-sale", "name":"Bench", "new_price": 130, "old_price": 150, "description": "Amalia Cowhide Bench", "url": "../../our-products-products-item6.png", "rating": 4
+    },
+  
+    {
+      "id":23,  "status":"New", "style": "pict-name-new", "name":"Storage", "new_price": 180, "old_price": 250, "description": "Juno-Hinged Lid Storage", "url": "../../our-products-products-item7.png", "rating": 5
+    },
+  
+    {
+      "id":24, "status":"New", "style": "pict-name-new", "name":"Furniture", "new_price": 120, "old_price": 150, "description": "Delicia 3 Piece Living Room", "url": "../../our-products-products-item8.png", "rating": 4
+    },
+   {
+    "id":25, "status":"Sale", "style": "pict-name-sale", "name":"Chair", "new_price": 180, "old_price": 250, "description": "Minimal LCD chair", "url": "../../our-products-products-item1.png", "rating": 5
+    },
+  
+    {
+    "id":26, "status":"New", "style": "pict-name-new",  "name":"Sofa", "new_price": 120, "old_price": 150, "description": "Modern Sofa", "url": "../../our-products-products-item2.png", "rating": 4
+    },
+  
+    {
+    "id":27, "status":30, "style": "pict-name-discount", "name":"Sofa", "new_price": 130, "old_price": 150, "description": "Microfiber Sofa", "url": "../../our-products-products-item3.png", "rating": 4
+    },
+  
+    {
+    "id":28, "status":"Sale", "style": "pict-name-sale", "name":"Tabble", "new_price": 100, "old_price": 120, "description": "Wood Coffee Tables", "url": "../../our-products-products-item4.png", "rating": 5
+    },
+  
+    {
+    "id":29, "status":30, "style": "pict-name-discount", "name":"Chair", "new_price": 100, "old_price": 120, "description": "Acacia Wood Club Chairs", "url": "../../our-products-products-item5.png", "rating": 5
+    },
+    {
+    "id":30, "status":"Sale", "style": "pict-name-sale", "name":"Bench", "new_price": 130, "old_price": 150, "description": "Amalia Cowhide Bench", "url": "../../our-products-products-item6.png", "rating": 4
+    },
+  
+    {
+    "id":31, "status":"New", "style": "pict-name-new", "name":"Storage", "new_price": 180, "old_price": 250, "description": "Juno-Hinged Lid Storage", "url": "../../our-products-products-item7.png", "rating": 5
+    },
+  
+    {
+    "id":32, "status":"New", "style": "pict-name-new", "name":"Furniture", "new_price": 120, "old_price": 150, "description": "Delicia 3 Piece Living Room", "url": "../../our-products-products-item8.png", "rating": 4
+    },
+   {
+    "id":33, "status":"Sale", "style": "pict-name-sale", "name":"Chair", "new_price": 180, "old_price": 250, "description": "Minimal LCD chair", "url": "../../our-products-products-item1.png", "rating": 5
+    },
+  
+    {
+    "id":34, "status":"New", "style": "pict-name-new",  "name":"Sofa", "new_price": 120, "old_price": 150, "description": "Modern Sofa", "url": "../../our-products-products-item2.png", "rating": 4
+    },
+  
+    {
+    "id":35, "status":30, "style": "pict-name-discount", "name":"Sofa", "new_price": 130, "old_price": 150, "description": "Microfiber Sofa", "url": "../../our-products-products-item3.png", "rating": 4
+    },
+  
+    {
+    "id":36, "status":"Sale", "style": "pict-name-sale", "name":"Tabble", "new_price": 100, "old_price": 120, "description": "Wood Coffee Tables", "url": "../../our-products-products-item4.png", "rating": 5
+    }
+  ]

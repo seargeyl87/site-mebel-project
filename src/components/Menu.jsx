@@ -1,7 +1,50 @@
 import '../App.css';
-import ListHead from "./ListHead";
+import MenuListFern from "./MenuListFern";
+import MenuPicts from "./MenuPicts";
+import {useState, useEffect} from 'react';
+import {Link} from 'react-router-dom';
+
+
+
 
 function Menu() {
+
+  let [listMenu, setListMenu] = useState([]);
+  let [pictMenu, setPictMenu] = useState([]);
+
+  let [changePict, setChangePict] = useState( '../../chair-head-item4.png');
+
+
+  function func(url) {
+    setChangePict(url.target.src)
+    console.log(url.target.src);
+    console.log(changePict);
+
+  }
+  
+  async function getMenu() {
+    let response = await fetch('https://apimocha.com/seargeyl87/mebel/list_menu')
+          .then(response => response.json())
+          .then(result => setListMenu(result))
+          .catch(error => console.log(error))
+        }
+
+        async function getPict() {
+          let response = await fetch('https://apimocha.com/seargeyl87/mebel/pict_menu')
+                .then(response => response.json())
+                .then(arr => arr.slice(0, 3))
+                .then(result => setPictMenu(result))
+                .catch(error => console.log(error))
+              }
+
+        useEffect(() => {
+          getMenu();
+        }, [])
+
+        useEffect(() => {
+          getPict();
+        }, [])
+
     return (
       <div className="menu">
 
@@ -13,17 +56,10 @@ function Menu() {
               </div>
           </div>
           <div className="list-fern">
-          <div className="list-fern-item"><p>All</p></div>
-          <div className="list-fern-item"><p>New Arrivals</p></div>
-          <div className="list-fern-item"><p>Hot Sale</p></div>
-          <div className="list-fern-item"><p>Furniture</p></div>
-          <div className="list-fern-item"><p>Amrature</p></div>
-          <div className="list-fern-item"><p>Tabble</p></div>
-          <div className="list-fern-item"><p>Chair</p></div>
-          <div className="list-fern-item"><p>Sofa</p></div>
-          <div className="list-fern-item"><p>Mirrors</p></div>
-          <div className="list-fern-item"><p>Stools</p></div>
-          <div className="list-fern-item"><p>Benches</p></div>
+            {listMenu.map((item, index) => 
+            <MenuListFern item={item} 
+                          key={index}/>
+                          )}
           </div>
         </div>
     
@@ -41,10 +77,12 @@ function Menu() {
                 <span>TOP COLLECTIONS 2022</span>
                 <h1>We Serve Your Dream Furniture</h1>
                 <div className="discount">Get 50% off all products</div>
-                <button>SHOP NOW</button>
+                <Link to="chair"><button>SHOW NOW</button></Link>
             </div>
             <div className="head-img-item2">
-               <img src="../../chair-head.png"/>
+         
+               <img src={changePict}/>
+        
                <div className="points">
                   <div className="point" style={{ backgroundImage:`url("../../point.svg")`}}></div>
                   <div className="point" style={{ backgroundImage:`url("../../point.svg")`}}></div>
@@ -52,24 +90,14 @@ function Menu() {
                   <div className="point" style={{ backgroundImage:`url("../../point.svg")`}}></div>
                </div>
             </div>
-           
             <div className="head-img-item3">
-                <div className="head-img-chair-price">
-                   <img src="../../chair-head-item1.png"/>
-                   <span>$120</span>
-                   <p>Office Desk Chair</p>
-                </div>
-                <div className="head-img-chair-price">
-                   <img src="../../chair-head-item2.png"/>
-                   <span>$120</span>
-                   <p>Office Desk Chair</p>
-                </div>
-                <div className="head-img-chair-price">
-                   <img src="../../chair-head-item3.png"/>
-                   <span>$120</span>
-                   <p>Office Desk Chair</p>
-                </div>
-            </div>
+            {pictMenu.map((item, index) => 
+               < MenuPicts item={item}
+                           key={index}
+                           func={func}
+                           />
+            )}
+              </div>
           </div>
       </div>
     </div>
