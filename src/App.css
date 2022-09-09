@@ -209,7 +209,7 @@
   margin-right: 10%;
 }
 
-.menu .list-menu-head {
+.menu .list-menu-head, .container_chair {
   flex-basis : 71%;
 }
 
@@ -221,8 +221,6 @@
   padding: 11px 8px 11px 4%;
   box-sizing: border-box; 
 
-
- 
 }
 
 .menu .list-menu-head .list-menu p {
@@ -251,14 +249,16 @@ padding-right: 13.5%;
 }
 
 
-.menu .menu__list-fern_all-collection .list-fern .list-fern-item {
+.menu .menu__list-fern_all-collection .list-fern .list-fern-item a{
   display: flex;
   align-items: center;
   border-bottom: 1px solid #E3E3E3;
+  text-decoration: none;
+  color: #000;
 
 }
 
-.menu .menu__list-fern_all-collection .list-fern .list-fern-item p {
+.menu .menu__list-fern_all-collection .list-fern .list-fern-item {
   margin-left: 10%;
   font-size: 14px;
   font-family: 'Rubik', sans-serif;

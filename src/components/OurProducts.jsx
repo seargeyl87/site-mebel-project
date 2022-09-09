@@ -1,31 +1,21 @@
 import '../App.css';
 import {useState, useEffect} from 'react';
 import OurProductsItem from './OurProductsItem';
+import PostService from './PostService';
 
 
 function OurProducts() {
 let [listOurProducts, setListOurProducts] = useState([]);
 
-let arr = [23, 45, 23, 44, 34];
 
-arr.sort((a, b) => {
-  if(a>b) {
-    return 1
-  } else return -1
-})
-
-console.log(arr)
-
-async function getOurProducts() {
-    let response = await fetch('ourProducts.json?id=1')
-          .then(response => response.json())
-          // .then(result2 => result2.slice(0, 8))
-          .then(result => setListOurProducts(result))
-          .catch(error => console.log(error))
+  async function getData() {
+    let response = await PostService.getOurProduct();
+     setListOurProducts(response)    
         }
-  useEffect(() => {
-           getOurProducts();
-    }, [])
+
+  // useEffect(() => {
+  //          getData();
+  //   }, [])
 
     return (
       <div className="our-products">

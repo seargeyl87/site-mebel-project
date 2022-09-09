@@ -1,20 +1,20 @@
 import '../App.css';
 import {useState, useEffect} from 'react';
 import TrendingItem from './TrendingItem';
+import PostService from './PostService';
 
 function Trending() {
     let [listTrending, setListTrending] = useState([]);
 
-    async function getTrending() {
-        let response = await fetch('https://apimocha.com/seargeyl87/mebel/trending')
-              .then(response => response.json())
-              .then(result => setListTrending(result))
-              .catch(error => console.log(error))
+   
+    async function getData() {
+       let posts = await  PostService.getAllTrend()
+          setListTrending(posts)
             }
 
-      useEffect(() => {
-                getTrending();
-        }, [])
+      // useEffect(() => {
+      //  getData()
+      //   }, [])
 
 
 
