@@ -1,13 +1,20 @@
 import '../App.css';
 import Rating from './Rating';
+import {Link} from 'react-router-dom';
 
 
-function TrendingItem({item}) {
-    return (
-        <div className="trending-products-item">
-        <div className="trending-products-item-pict" style={{ backgroundImage:`url(${item.url})`}}>
-           <div className={item.style}>{item.status}</div>
-           <div className="hover">
+function ProductsItem({item}) {
+
+
+    function func() {
+        console.log(item)
+      }
+
+    return ( 
+        <div className="products-item" onClick={func}>
+           <Link to="/chair"> <div className="products-item-pict" style={{ backgroundImage:`url(${item.url})`}}>
+             {typeof item.status === "number" ? <div className={item.style}>-{item.status}%</div> : <div className={item.style}>{item.status}</div>}
+              <div className="hover">
                    <div className="hover-feature">
                            <div className="hover-feature-casing">
                                <div className="hover-feature-item" style={{ backgroundImage:`url("../../label-heart.svg")`}}></div>
@@ -23,7 +30,7 @@ function TrendingItem({item}) {
                            </div>
                        </div>
                </div>
-        </div>
+        </div></Link>
         <div className="products-item-name">{item.name}</div>
         <div className="products-item-description">{item.description}</div>
          <div className="products-item-pricing-rating">
@@ -41,4 +48,4 @@ function TrendingItem({item}) {
     )
 }
 
-export default TrendingItem;
+export default ProductsItem;

@@ -14,8 +14,8 @@ function MenuListHead() {
 
  function func(url) {
     setChangePict(url.target.src)
-    console.log(url.target.src);
-    console.log(changePict);
+    console.log(url)
+    console.log(url.target.src)
   }
   
    async function getDataPict() {
@@ -23,15 +23,15 @@ function MenuListHead() {
      setPictMenu(response.slice(0, 3))
               }
 
-    // useEffect(() => {
-    //       getDataPict();
-    //  }, [])
+    useEffect(() => {
+          getDataPict();
+     }, [])
   
 
  return   (
     <div className="list-menu-head">
             <div className="list-menu">
-            <Link to="chairfilter"><p>HOME</p></Link>
+                <p>HOME</p>
                 <p>SHOP</p>
                 <p>BLOG</p>
                 <p>ABOUT</p>
@@ -46,9 +46,9 @@ function MenuListHead() {
                    <Link to="chair"><button>SHOW NOW</button></Link>
                 </div>
                 <div className="head-img-item2">
-        
+
                     <img src={changePict}/>
-        
+
                     <div className="points">
                         <div className="point" style={{ backgroundImage:`url("../../point.svg")`}}></div>
                         <div className="point" style={{ backgroundImage:`url("../../point.svg")`}}></div>

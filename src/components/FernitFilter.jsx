@@ -2,6 +2,7 @@ import '../App.css';
 import {useState, useEffect} from 'react';
 import FernitFilterItem from './FernitFilterItem';
 import PostService from './PostService';
+import ProductsItem from './ProductsItem';
 import {useParams} from "react-router-dom";
 
 function FernitFilter() {
@@ -15,7 +16,9 @@ function FernitFilter() {
     setListListSofa(response)    
         }
 
-        console.log(listSofa)
+
+
+
   useEffect(() => {
            getData();
     }, [])
@@ -28,11 +31,10 @@ function FernitFilter() {
                         </div>
                       <div className="our-products-products">
                           {listSofa.map((item, index) =>
-                              <FernitFilterItem itemFernit={item} key={index}/>
+                              <ProductsItem id={id} item={item} key={index}/>
                           )}
                   </div>   
               </div>
-
       </div>
 
 

@@ -1,7 +1,8 @@
-import './App.css';
+import '../App.css';
 
 
-function Chair() {
+function Chair() { 
+
   return (
 
        <div className="container_chair">

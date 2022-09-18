@@ -1,6 +1,6 @@
 import '../App.css';
 import {useState, useEffect} from 'react';
-import TrendingItem from './TrendingItem';
+import ProductsItem from './ProductsItem';
 import PostService from './PostService';
 
 function Trending() {
@@ -12,11 +12,11 @@ function Trending() {
           setListTrending(posts)
             }
 
-      // useEffect(() => {
-      //  getData()
-      //   }, [])
+      useEffect(() => {
+       getData()
+        }, [])
 
-
+ 
 
     return (
       <div className="trending">
@@ -27,7 +27,7 @@ function Trending() {
              <a href="" className="trending-filter-item">Best Sellers</a>
           </div>
           <div className="trending-products">
-              {listTrending.map((item, index) => <TrendingItem item={item} key={index}/>)}
+              {listTrending.map((item, index) => <ProductsItem item={item} key={index}/>)}
           </div>
           <div className="switch">
               <div className="switch-off" style={{ backgroundImage:`url("../../switch-off.svg")`}}></div>

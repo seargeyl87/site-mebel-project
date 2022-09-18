@@ -570,7 +570,7 @@ padding-right: 13.5%;
   justify-content:space-between;
 }
 
-.trending .trending-products .trending-products-item {
+.products-item {
   flex-basis: 25%;
   padding-left: 10px;
   padding-right: 10px;
@@ -579,7 +579,7 @@ padding-right: 13.5%;
 }
 
 
-.trending .trending-products .trending-products-item-pict {
+.products-item-pict {
   display: flex;
   height: 287px;
   background-size: cover;
@@ -590,31 +590,31 @@ padding-right: 13.5%;
 }
 
 
-.trending .trending-products .trending-products-item-pict .hover {
+.products-item-pict .hover {
   display: none;
   justify-content: end;
   margin-bottom: 10px;
   margin-right: 5px;
 }
 
-.trending .trending-products .trending-products-item :hover .hover {
+.products-item :hover .hover {
   display: flex;
 }
 
 
-.trending .trending-products .trending-products-item-pict .hover-feature {
+.products-item-pict .hover-feature {
   display: flex;
   flex-direction: column;
 }
 
-.trending .trending-products .trending-products-item-pict .hover-feature .hover-feature-casing {
+.products-item-pict .hover-feature .hover-feature-casing {
   padding: 9px;
   background-color: rgb(255, 255, 255);
   border-radius: 20px;
   margin: 5px;
 }
 
-.trending .trending-products .trending-products-item-pict .hover-feature .hover-feature-item {
+.products-item-pict .hover-feature .hover-feature-item {
    width: 20px;
    height: 20px;
    background-size: cover;
@@ -665,18 +665,18 @@ padding-right: 13.5%;
 
 
 
-.trending .trending-products .trending-products-item .products-item-pricing {
+.products-item .products-item-pricing {
   display: flex;
 }
 
-.trending .trending-products .trending-products-item .products-item-name {
+.products-item .products-item-name {
   text-transform: uppercase;
   font-family: 'Mulish', sans-serif;
   color: rgba(117, 117, 117, 0.71);
   margin-top: 10px;
 }
 
-.trending .trending-products .trending-products-item .products-item-description {
+.products-item .products-item-description {
   font-family: 'Rubik', sans-serif;
   font-size: 20px;
   color: #555555;
@@ -686,7 +686,7 @@ padding-right: 13.5%;
 
 }
 
-.trending .trending-products .trending-products-item .products-item-pricing-rating {
+.products-item .products-item-pricing-rating {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -714,13 +714,13 @@ padding-right: 13.5%;
   background-image: url("../public/star.svg");
 }
 
-.trending .trending-products .trending-products-item .products-item-pricing-rating .products-item-pricing .products-item-pricing-new {
+.products-item .products-item-pricing-rating .products-item-pricing .products-item-pricing-new {
   font-family: 'Mulish', sans-serif;
   font-size: 18px;
   color: #7AC751;
 }
 
-.trending .trending-products .trending-products-item .products-item-pricing-rating .products-item-pricing .products-item-pricing-old {
+.products-item-pricing-rating .products-item-pricing .products-item-pricing-old {
   font-family: 'Mulish', sans-serif;
   font-size: 18px;
   color: #CCCCCC;
@@ -975,7 +975,7 @@ padding-right: 13.5%;
   justify-content: space-between;
 }
 
-.our-products .our-products-products .our-products-products-item {
+/* .our-products .our-products-products .our-products-products-item {
   display: flex;
   flex-direction: column;
   flex-basis: 25%;
@@ -987,8 +987,8 @@ padding-right: 13.5%;
   height: 287px;
   width: 100%;
   margin-top: 20px;
-  background-size: cover;
-}
+  background-size: cover; 
+} */
 
 
 /* .our-products .our-products-products .our-products-products-item-pict .pict-name {
@@ -1031,7 +1031,7 @@ padding-right: 13.5%;
 } */
 
 
-.our-products .our-products-products .our-products-products-item .products-item-pricing {
+/*.our-products .our-products-products .our-products-products-item .products-item-pricing {
   display: flex;
 }
 
@@ -1087,7 +1087,7 @@ padding-right: 13.5%;
   color: #CCCCCC;
   text-decoration-line: line-through;
   margin-left: 15px;
-}
+ }*/
 
 .our-products .pagination {
   display: flex;
@@ -1121,7 +1121,7 @@ padding-right: 13.5%;
  font-size: 36px;
  color: #555555;
  font-family: 'Mulish', sans-serif;
-}
+} 
 
 
 .comments .comments-block {

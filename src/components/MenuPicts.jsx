@@ -1,6 +1,6 @@
 import '../App.css';
 
-function MenuPicts({item, func}) {
+function MenuPicts({item, func}) { 
 
     return (
         <div className="head-img-chair-price">

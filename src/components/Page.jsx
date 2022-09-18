@@ -16,7 +16,6 @@ import BenefitsPict from './BenefitsPict';
 
 function Page (props) {
 
-    console.log(props)
     return (
         <>           
                 {props.searchIcons}

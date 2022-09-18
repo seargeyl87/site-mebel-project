@@ -1,5 +1,5 @@
 import { Routes, Route} from 'react-router-dom';
-import Chair from '../Chair';
+import Chair from './Chair';
 import About from './About';
 import SearchIcons from './SearchIcons';
 import Menu from './Menu';
@@ -24,6 +24,12 @@ function AppRouter() {
     return (
         <div>
             <Routes>
+
+                <Route path='/chair' element={<Page 
+                                                     menu={<Menu item={<Chair/>}/>}/>} />                                          
+                <Route path='/:id' element={<Page 
+                                                     menu={<Menu item={<FernitFilter/>}/>}/>} />
+                                                     
                 <Route path='/' element={ <Page   searchIcons={<SearchIcons/>} 
                                                   menu={<Menu item={<MenuListHead/>}/>}
                                                   benefits={ <Benefits/>}
@@ -34,11 +40,6 @@ function AppRouter() {
                                                   comments={<Comments/>}
                                                   latestArticle={<LatestArticle/>}
                       />} />
-                {/* <Route path='/chair' element={<Chair/>} /> */}
-                <Route path='/chair' element={<Page 
-                                                     menu={<Menu item={<Chair/>}/>}/>} />                                          
-                <Route path='/:id' element={<Page 
-                                                     menu={<Menu item={<FernitFilter/>}/>}/>} />
                                                                                                           
             </Routes>
         </div>
