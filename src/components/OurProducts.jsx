@@ -1,17 +1,13 @@
 import '../App.css';
 import {useState, useEffect} from 'react';
 import PostService from './PostService';
-import ProductsItem from './ProductsItem';
 import {useParams} from "react-router-dom";
+import Products from './Products';
 
 
 function OurProducts() {
-let [listOurProducts, setListOurProducts] = useState([]);
-
+let [listProducts, setListOurProducts] = useState([]);
 let {id} = useParams()
-
-
-
   async function getData() {
     let response = await PostService.getOurProduct(id);
      setListOurProducts(response)    
@@ -32,11 +28,8 @@ let {id} = useParams()
                       <a href="" className="our-products-filter-item">New Arrivals</a>
                       <a href="" className="our-products-filter-item">Todays Deals</a>
               </div>
-              <div className="our-products-products">
-                  {listOurProducts.map((item, index) =>
-                      <ProductsItem id={id} item={item} key={index}/>
-                  )}
-          </div>   
+            <Products listProducts={listProducts}
+                      id={id}/> 
          <div className="pagination">
            <button>Next page</button>
          </div>

@@ -15,21 +15,28 @@ import Page from './Page';
 import MenuListCollection from './MenuListCollection';
 import MenuListHead from './MenuListHead';
 import FernitFilter from './FernitFilter';
+import Context from "./Context";
+import {useContext, useEffect, useState} from 'react';
+import TwoContext from './TwoContext';
 
 
 
 
 
 function AppRouter() {
+    let {themeRouter, setThemeRouter} = useContext(TwoContext);
+
+    
+
     return (
         <div>
             <Routes>
 
-                <Route path='/chair' element={<Page 
-                                                     menu={<Menu item={<Chair/>}/>}/>} />                                          
+                <Route path='/products/:id' element={<Page 
+                                                     menu={<Menu item={<Chair themeRouter={themeRouter}/>}/>}/>} />                                          
                 <Route path='/:id' element={<Page 
-                                                     menu={<Menu item={<FernitFilter/>}/>}/>} />
-                                                     
+                                                     menu={<Menu item={<FernitFilter/>}/>}/>} />  
+
                 <Route path='/' element={ <Page   searchIcons={<SearchIcons/>} 
                                                   menu={<Menu item={<MenuListHead/>}/>}
                                                   benefits={ <Benefits/>}

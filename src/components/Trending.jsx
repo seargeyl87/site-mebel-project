@@ -2,14 +2,17 @@ import '../App.css';
 import {useState, useEffect} from 'react';
 import ProductsItem from './ProductsItem';
 import PostService from './PostService';
+import Products from './Products';
+import {useParams} from "react-router-dom";
 
 function Trending() {
-    let [listTrending, setListTrending] = useState([]);
+    let [listProducts, setlistProducts] = useState([]);
+    let {id} = useParams()
 
    
     async function getData() {
        let posts = await  PostService.getAllTrend()
-          setListTrending(posts)
+       setlistProducts(posts)
             }
 
       useEffect(() => {
@@ -26,9 +29,10 @@ function Trending() {
              <a href="" className="trending-filter-item">New Arrivals</a>
              <a href="" className="trending-filter-item">Best Sellers</a>
           </div>
-          <div className="trending-products">
-              {listTrending.map((item, index) => <ProductsItem item={item} key={index}/>)}
-          </div>
+
+          <Products listProducts={listProducts}
+                id={id}/> 
+
           <div className="switch">
               <div className="switch-off" style={{ backgroundImage:`url("../../switch-off.svg")`}}></div>
               <div className="switch-on" style={{ backgroundImage:`url("../../switch-on.svg")`}}></div>

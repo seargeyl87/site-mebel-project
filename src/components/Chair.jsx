@@ -1,19 +1,32 @@
 import '../App.css';
+import {useContext, useEffect, useState} from 'react';
+import TwoContext from './TwoContext';
+import PostService from './PostService';
 
 
-function Chair() { 
+
+
+function Chair({themeRouter}) { 
+     let [state, setState] = useState([])
+
+async function getProductInfo() {
+     let responseSofa = await PostService.getProductId(themeRouter);
+          let [obj] = responseSofa;
+          setState(obj)
+}
+     useEffect(() => {
+          getProductInfo()
+     }, [])
 
   return (
-
        <div className="container_chair">
-            <h1>Office Blue Chair</h1>
+            <h1>{state.name}</h1>
             <div className="head-img-item2">
-               <img src="../../chair-head-item4.png"/>
+               <img src={state.url}/>
             </div> 
-            <div className="price">190$</div> 
-            <div className="description">this is a nice chair4</div> 
+            <div className="price">{state.new_price}$</div> 
+            <div className="description">{state.description}</div> 
        </div>
-
   );
 }
 
