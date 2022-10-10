@@ -10,18 +10,8 @@ import Context from "./Context";
 function FernitFilter() {
   let {theme, setTheme} = useContext(Context);
     let [listProducts, setListSofa] = useState([]);
-    let {id} = useParams()
-    
-    // async function getDataSofa() {
-    //   let responseSofa = await PostService.getSofa(id);
-    //   setListSofa(responseSofa)
-    //   console.log(listProducts)
-    // }
-
-    // async function getDataChair() {
-    //   let responseChair = await PostService.getChairs(id);
-    //   setListSofa(responseChair)
-    // }
+    let {id} = useParams();
+    console.log(id)
 
     async function getDataSofa() {
       let responseSofa;

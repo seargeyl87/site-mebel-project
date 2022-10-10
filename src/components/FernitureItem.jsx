@@ -1,16 +1,19 @@
 import '../App.css';
 import {useContext, useEffect, useState} from 'react';
-import TwoContext from './TwoContext';
 import PostService from './PostService';
+import {useParams} from "react-router-dom";
 
 
 
 
-function Chair({themeRouter}) { 
-     let [state, setState] = useState([])
+function FernitureItem({themeRouter}) { 
+     let [state, setState] = useState([]);
+     let {id} = useParams()
+     console.log(state)
+
 
 async function getProductInfo() {
-     let responseSofa = await PostService.getProductId(themeRouter);
+     let responseSofa = await PostService.getProductId(Number(id));
           let [obj] = responseSofa;
           setState(obj)
 }
@@ -30,4 +33,4 @@ async function getProductInfo() {
   );
 }
 
-export default Chair;
+export default FernitureItem;

@@ -5,12 +5,12 @@ import MenuListHead from './MenuListHead';
 
 
 
-function Menu(props) {
+function Menu({item}) {
 
     return (
       <div className="menu">
           <MenuListCollection/>
-          {props.item}
+          {item}
       </div>
         );
       }

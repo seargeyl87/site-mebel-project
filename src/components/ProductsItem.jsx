@@ -3,23 +3,12 @@ import Rating from './Rating';
 import {Link} from 'react-router-dom';
 import PostService from './PostService';
 import { useState, useContext } from 'react';
-import TwoContext from './TwoContext';
 
 
 function ProductsItem({item}) {
 
-    let {themeRouter, setThemeRouter} = useContext(TwoContext);
-
-    async function getProductId() {
-        // let responseSofa = await PostService.getProductId(item.id);
-        // let [obj] = responseSofa;
-        setThemeRouter(item.id);
-        console.log(item.id)
-      }
-
     return ( 
-
-        <div className="products-item" onClick={getProductId}>
+        <div className="products-item">
            <Link to={`/products/${item.id}`}> <div className="products-item-pict" style={{ backgroundImage:`url(${item.url})`}}> 
              {typeof item.status === "number" ? <div className={item.style}>-{item.status}%</div> : <div className={item.style}>{item.status}</div>}
               <div className="hover">

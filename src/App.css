@@ -23,6 +23,11 @@
  justify-content: center;
 }
 
+.pages {
+  font-size: 20px;
+
+}
+
 
 .top {
   display: flex;
@@ -262,13 +267,17 @@ padding-right: 13.5%;
   border-bottom: 1px solid #E3E3E3;
   text-decoration: none;
   color: #000;
-
 }
 
 .menu .menu__list-fern_all-collection .list-fern .list-fern-item {
-  margin-left: 10%;
+  padding-left: 10%;
   font-size: 14px;
   font-family: 'Rubik', sans-serif;
+}
+
+.menu .menu__list-fern_all-collection .list-fern :hover {
+  background: #e9eaeb;
+  text-decoration: underline; 
 }
 
 .menu .list-head .head-img {
@@ -986,17 +995,59 @@ padding-right: 13.5%;
 .our-products .pagination {
   display: flex;
   padding-top: 50px;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.our-products .pagination .pages {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.our-products .pagination .pages .btn-prev, .btn-next {
+  display: flex;
+
+}
+
+.our-products .pagination .pages .ellipsis {
+  display: flex;
+  margin:0 30px 0px 30px;
+  align-items: flex-end;
+}
+
+.our-products .pagination .choose-limit .choose-limit-btn {
+  display: flex;
   justify-content: center;
 }
 
-.our-products .pagination button {
+.our-products .pagination .choose-limit .choose-limit-btn button {
+  margin: 0 30px 0 30px;
+}
+
+.our-products .pagination .choose-limit .choose-limit-info {
+  font-size: 22px;
+  color: #555555;
+  font-family: 'Mulish', sans-serif;
+  margin-bottom: 10px;
+}
+
+.our-products .pagination .btn-range button {
+margin-left: 20px;
+}
+
+.our-products .pagination button  {
   display: flex;
   height: 44px;
-  width: 161px;
+  width: 44px;
   justify-content: center;
   align-items: center;
   background: #7AC751;
   color: #FFFFFF;
+}
+
+.our-products .pagination .current{
+  background:rgb(243, 0, 0)
 }
 
 

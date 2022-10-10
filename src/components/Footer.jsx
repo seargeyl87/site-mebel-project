@@ -1,14 +1,7 @@
 import '../App.css';
-import {useState, useContext} from 'react';
-import Context from "./Context";
 
 
 function Footer() {
-
-  let {theme, setTheme} = useContext(Context);
-  console.log(theme);
-
-
     return (
       <div className="footer">
           <div className="footer-line" style={{ backgroundImage:`url("../../footer-line.svg")`}}></div>
